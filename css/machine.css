@@ -1,0 +1,44 @@
+body {
+    margin: 2.25em;
+    padding: 0;
+}
+p {
+    font-size: 1.62em;
+    line-height: 1.25em;
+    max-width: 800px;
+    margin-bottom: 1em;
+    padding: 0;
+    -webkit-margin-before: 0;
+        -webkit-margin-after: 1em;
+    color: red;
+}
+a {
+    color: red;
+    text-decoration: none;
+    border: 1px solid red;
+    padding: 0 0.25em 0.06em 0.25em;
+}
+a:visited {
+    color: red;
+    border: 1px solid red;
+}
+a:hover {
+    color: black;
+    border: 1px solid black;
+}
+a:active {
+    color: white;
+    border: 1px solid black;
+    background: black;
+}
+em {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 0.96em;
+    letter-spacing: 0.04em;
+}
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 1.45em;
+    }
+}
