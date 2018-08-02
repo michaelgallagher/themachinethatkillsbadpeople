@@ -1,44 +1,146 @@
 body {
-    margin: 2.25em;
-    padding: 0;
+	margin: 2.25em;
+	padding: 0;
 }
 p {
-    font-size: 1.62em;
-    line-height: 1.25em;
-    max-width: 800px;
-    margin-bottom: 1em;
-    padding: 0;
-    -webkit-margin-before: 0;
-        -webkit-margin-after: 1em;
-    color: red;
+	/* font-size: 1.62em;
+	line-height: 1.25em;
+	max-width: 800px;
+	margin-bottom: 1em;
+	padding: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 1em;
+	color: red; */
 }
 a {
-    color: red;
-    text-decoration: none;
-    border: 1px solid red;
-    padding: 0 0.25em 0.06em 0.25em;
+	color: red;
+	text-decoration: none;
+	border: 1px solid red;
+	padding: 0 0.25em 0.06em 0.25em;
 }
 a:visited {
-    color: red;
-    border: 1px solid red;
+	color: red;
+	border: 1px solid red;
 }
 a:hover {
-    color: black;
-    border: 1px solid black;
+	color: black;
+	border: 1px solid black;
 }
 a:active {
-    color: white;
-    border: 1px solid black;
-    background: black;
+	color: white;
+	border: 1px solid black;
+	background: black;
 }
 em {
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 0.96em;
-    letter-spacing: 0.04em;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 0.96em;
+	letter-spacing: 0.04em;
 }
+
+.content p {
+	font-size: 27px;
+	line-height: 1.25em;
+	max-width: 830px;
+	margin-bottom: 1em;
+	padding: 0;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 1em;
+	color: red;
+}
+
+.signup {
+	color:#666;
+	border-top: 1px solid #ddd;
+	padding-top: 1.2em;
+	margin: 1.5em 0 1.5em 0;
+	font-size: 27px;
+	line-height: 1.25em;
+}
+
+.signup p {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 1em;
+}
+
+input[type=email] {
+	border: 1px solid #666;
+	margin: 0;
+	padding: 0.3em 0.5em 0.35em 0.5em;
+	clear: both;
+	width: 600px;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 27px;
+	color: #666;
+}
+
+input[type=email]:focus {
+	background-color: rgb(255, 255, 210);
+	outline: none;
+}
+
+input[type=submit] {
+	border: 1px solid #666;
+	background-color: #fff;
+	margin: 0 0 0 -1px;
+	padding: 0.3em 0.5em 0.35em 0.5em;
+	/* clear: both; */
+	/* width: 600px; */
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 27px;
+	color: #666;
+}
+
+input[name="subscribe"]:hover {
+	background-color: #666;
+	color: #fff;
+}
+
+.mc-field-group {
+	display: block;
+	float: left;
+}
+
+.form-label {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 0.5em;
+}
+
+.submit-button {
+	float: left;
+}
+
+
+
+
+/* Media queries for adjusting type sizes, etc.
+-------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 900px) {
+	input[type=email] {
+		width: 500px;
+	}
+	.mc-field-group,
+	.submit-button {
+		float: none;
+	}
+	input[type=submit] {
+		margin-top: 6px;
+	}
+}
+
 @media only screen and (max-width: 600px) {
-    p {
-        font-size: 1.45em;
-    }
+	.content p,
+	.signup,
+	input[type=email],
+	input[type=submit] {
+		font-size: 20px;
+	}
+	input[type=email] {
+		width: 80%;
+	}
+	input[type=submit] {
+		/* font-size: 20px; */
+	}
 }
+
