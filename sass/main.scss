@@ -2,10 +2,10 @@
 ----------------------------------------------------------------------- */
 
 // The reset
-@import "vendor/reset";
+// @import "vendor/reset";
 // Basic, foundational things
 // @import "foundation/defaults";
-// @import "foundation/breakpoints";
+@import "foundation/breakpoints";
 @import "foundation/colours";
 @import "foundation/grid";
 @import "foundation/typography";
