@@ -1,16 +1,6 @@
 body {
-	margin: 2.25em;
+	margin: 2em 2.25em;
 	padding: 0;
-}
-p {
-	/* font-size: 1.62em;
-	line-height: 1.25em;
-	max-width: 800px;
-	margin-bottom: 1em;
-	padding: 0;
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 1em;
-	color: red; */
 }
 a {
 	color: red;
@@ -131,6 +121,10 @@ input[name="subscribe"]:hover {
 
 @media only screen and (max-width: 600px) {
 	.content p,
+	.signup {
+		line-height: 1.35em;
+	}
+	.content p,
 	.signup,
 	input[type=email],
 	input[type=submit] {
@@ -144,3 +138,17 @@ input[name="subscribe"]:hover {
 	}
 }
 
+@media only screen and (max-width: 450px) {
+	body {
+		margin: 1.65em 1.75em;
+	}
+	.content p,
+	.signup,
+	input[type=email],
+	input[type=submit] {
+		font-size: 17px;
+	}
+	input[type=email] {
+		width: 80%;
+	}
+}
