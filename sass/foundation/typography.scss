@@ -1,0 +1,71 @@
+a {
+	color: red;
+	text-decoration: none;
+	border: 1px solid red;
+	padding: 0 0.25em 0.06em 0.25em;
+}
+a:visited {
+	color: red;
+	border: 1px solid red;
+}
+a:hover {
+	color: black;
+	border: 1px solid black;
+}
+a:active {
+	color: white;
+	border: 1px solid black;
+	background: black;
+}
+
+em {
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 0.96em;
+	letter-spacing: 0.04em;
+}
+
+.content {
+	p {
+		font-size: 27px;
+		line-height: 1.25em;
+		max-width: 830px;
+		margin-bottom: 1em;
+		padding: 0;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 1em;
+		color: red;
+	}
+}
+
+.signup {
+	color:#666;
+	border-top: 1px solid #ddd;
+	padding-top: 1.2em;
+	margin: 1.5em 0 1.5em 0;
+	font-size: 27px;
+    line-height: 1.25em;
+    p {
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 1em;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+	.content p,
+	.signup {
+		line-height: 1.35em;
+	}
+	.content p,
+	.signup {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.content p,
+	.signup {
+		font-size: 17px;
+	}
+}
