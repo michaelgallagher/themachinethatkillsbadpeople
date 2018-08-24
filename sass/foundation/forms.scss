@@ -1,12 +1,21 @@
+input {
+	@include body-fontsize;
+	font-family: 'Courier New', Courier, monospace;
+}
+
 input[type=email] {
 	border: 1px solid #666;
 	margin: 0;
 	padding: 0.3em 0.5em 0.35em 0.5em;
 	clear: both;
-	width: 600px;
-	font-family: 'Courier New', Courier, monospace;
-	@include body-fontsize;
+	width: 80%;
 	color: #666;
+	@include breakpoint(medium) {
+		width: 500px;
+	}
+	@include breakpoint(large) {
+		width: 600px;
+	}
 }
 
 input[type=email]:focus {
@@ -17,13 +26,10 @@ input[type=email]:focus {
 input[type=submit] {
 	border: 1px solid #666;
 	background-color: #fff;
-	margin: 0 0 0 -1px;
+	margin: 6px 0 0 -1px;
 	padding: 0.3em 0.5em 0.35em 0.5em;
-	/* clear: both; */
-	/* width: 600px; */
-	font-family: 'Courier New', Courier, monospace;
-	@include body-fontsize;
 	color: #666;
+	@include breakpoint(medium) {margin-top: 0px;}
 }
 
 input[name="subscribe"]:hover {
@@ -34,7 +40,8 @@ input[name="subscribe"]:hover {
 
 .mc-field-group {
 	display: block;
-	float: left;
+	float: none;
+	@include breakpoint(medium) {float: left;}
 }
 
 .form-label {
@@ -43,46 +50,7 @@ input[name="subscribe"]:hover {
 }
 
 .submit-button {
-	float: left;
+	float: none;
+	@include breakpoint(medium) {float: left;}
 }
 
-
-
-/* Media queries for adjusting type sizes, etc.
--------------------------------------------------------------------------------------- */
-
-@media only screen and (max-width: 900px) {
-	input[type=email] {
-		width: 500px;
-	}
-	.mc-field-group,
-	.submit-button {
-		float: none;
-	}
-	input[type=submit] {
-		margin-top: 6px;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	input[type=email],
-	input[type=submit] {
-		font-size: 20px;
-	}
-	input[type=email] {
-		width: 80%;
-	}
-	input[type=submit] {
-		/* font-size: 20px; */
-	}
-}
-
-@media only screen and (max-width: 450px) {
-	input[type=email],
-	input[type=submit] {
-		font-size: 17px;
-	}
-	input[type=email] {
-		width: 80%;
-	}
-}
