@@ -1,47 +1,66 @@
+.signup {
+	@include form-fontsize;
+	@include body-lineheight;
+	font-family: 'Courier New', Courier, monospace;
+	color: $mid-blue;
+	margin-top: 2em;
+    p {
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+    }
+}
+
 input {
-	@include body-fontsize;
+	@include form-fontsize;
 	font-family: 'Courier New', Courier, monospace;
 }
 
 input[type=email] {
-	border: 1px solid #666;
+	z-index: 2;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid $mid-blue;
 	margin: 0;
-	padding: 0.3em 0.5em 0.35em 0.5em;
+	padding: 0.3em 0.5em 0.35em 0em;
 	clear: both;
-	width: 80%;
-	color: #666;
-	@include breakpoint(medium) {
-		width: 500px;
-	}
-	@include breakpoint(large) {
-		width: 600px;
-	}
+	width: 100%;
+	color: $mid-blue;
+	@include breakpoint(small) {width: 600px;}
+	@include breakpoint(medium) {width: 670px;}
+	@include breakpoint(large) {width: 730px;}
+	@include breakpoint(huge) {width: 810px;}
 }
 
 input[type=email]:focus {
-	background-color: rgb(255, 255, 210);
 	outline: none;
+	border-bottom: 1px solid $mid-blue;
+}
+
+input[type=email]::placeholder {
+	color: $pale-blue;
 }
 
 input[type=submit] {
-	border: 1px solid #666;
-	background-color: #fff;
-	margin: 6px 0 0 -1px;
-	padding: 0.3em 0.5em 0.35em 0.5em;
-	color: #666;
-	@include breakpoint(medium) {margin-top: 0px;}
-}
-
-input[name="subscribe"]:hover {
-	background-color: #666;
+	z-index: 1;
+	border: none;
+	background-color: $mid-blue;
+	margin: 0 0 0 0;
+	padding: 0.7em 0.75em 0.7em 0.75em;
 	color: #fff;
 }
 
+input[name="subscribe"]:hover {
+	box-shadow: 0px 0px 100px $mid-green;
+}
+input[name="subscribe"]:active {
+	box-shadow: 0px 0px 100px $mid-red;
+}
 
 .mc-field-group {
 	display: block;
 	float: none;
-	@include breakpoint(medium) {float: left;}
+	// @include breakpoint(medium) {float: left;}
 }
 
 .form-label {
@@ -51,6 +70,6 @@ input[name="subscribe"]:hover {
 
 .submit-button {
 	float: none;
-	@include breakpoint(medium) {float: left;}
+	// @include breakpoint(medium) {float: left;}
 }
 
