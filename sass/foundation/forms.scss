@@ -1,9 +1,15 @@
 .signup {
+	float: right;
+	border: 1px solid $mid-blue;
+	padding: 1em;
+	background-color: #fff;
+	width: 33%;
 	@include form-fontsize;
 	@include body-lineheight;
 	font-family: 'Courier New', Courier, monospace;
 	color: $mid-blue;
-	margin-top: 2em;
+	box-shadow: 0px 0px 100px $mid-yellow;
+	// margin-top: 2em;
     p {
         -webkit-margin-before: 0em;
         -webkit-margin-after: 0em;
@@ -26,10 +32,10 @@ input[type=email] {
 	clear: both;
 	width: 100%;
 	color: $mid-blue;
-	@include breakpoint(small) {width: 600px;}
-	@include breakpoint(medium) {width: 670px;}
-	@include breakpoint(large) {width: 730px;}
-	@include breakpoint(huge) {width: 810px;}
+	// @include breakpoint(small) {width: 600px;}
+	// @include breakpoint(medium) {width: 670px;}
+	// @include breakpoint(large) {width: 730px;}
+	// @include breakpoint(huge) {width: 810px;}
 }
 
 input[type=email]:focus {
@@ -51,7 +57,7 @@ input[type=submit] {
 }
 
 input[name="subscribe"]:hover {
-	box-shadow: 0px 0px 100px $mid-green;
+	background-color: #000;
 }
 input[name="subscribe"]:active {
 	box-shadow: 0px 0px 100px $mid-red;

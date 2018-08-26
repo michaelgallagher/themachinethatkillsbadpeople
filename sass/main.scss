@@ -9,8 +9,10 @@
 @import "foundation/colours";
 @import "foundation/grid";
 @import "foundation/typography";
+@import "foundation/buttons";
 @import "foundation/forms";
 // Specific components
-// @import "components/screenings";
-// @import "components/footer";
+@import "components/blocks";
+@import "components/screenings";
+@import "components/footer";
 

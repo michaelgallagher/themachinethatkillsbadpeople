@@ -1,0 +1,90 @@
+/* Current screening
+--------------------------------------------------------------------------------------- */
+
+.screening--current {
+	background-color: $pale-red;
+	border-top: 1px solid $mid-red;
+	border-bottom: 1px solid $mid-red;
+	font-family: Helvetica, Arial, sans-serif;
+	.film-info {
+		@include body-fontsize-large;
+		text-align: center;
+		line-height: 0.9em;
+		letter-spacing: -0.03em;
+		padding: 0.5em 0 0.5em 0;
+		color: #000;
+	}
+	
+    .film-title,
+    .coming-up,
+    .accompanied {text-transform: uppercase;}
+	
+	.film-title,
+	.film-director,
+	.coming-up {
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+	}
+
+	.coming-up,
+	.accompanied,
+	.screening-date {
+		// @include body-fontsize-small;
+		text-align: center;
+		line-height: 1.6em;
+		letter-spacing: 0.03em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.coming-up, 
+	.screening-date {
+		color: $mid-red;
+	}
+
+	.screening-date {padding-bottom: 1em;}
+
+	.screening-description {
+		margin-left: auto;
+		margin-right: auto;
+		color: $mid-red;
+		max-width: 800px;
+		line-height: 1.5em;
+		letter-spacing: 0.02em;
+		-webkit-margin-before: 0em;
+		-webkit-margin-after: 0em;
+		padding-bottom: 0.9em;
+		&:last-of-type {
+			padding-bottom: 0em;
+		}
+		i {
+			font-style: normal;
+			text-transform: uppercase;
+		}
+		a {
+			padding: 0 0.25em 0.15em 0.25em;
+			border: 1px solid $mid-red;
+			color: $mid-red;
+			&:hover {
+				background-color: #fff;
+			}
+			&:active {
+				background-color: #000;
+				color: #fff;
+				border: 1px solid #000;
+			}
+		}
+	}
+}
+
+
+/* Previous screenings
+--------------------------------------------------------------------------------------- */
+
+.screenings--old {
+
+}
+
+.previous-screening {
+    border-bottom: 1px solid $lightest-grey;
+}

@@ -1,0 +1,26 @@
+.btn--center {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	margin-bottom: 2.5em;
+	text-align: center;
+}
+
+.btn--purchase {
+	padding: 0.9em 1em;
+    text-align: center;
+    text-transform: uppercase;
+	border: 2px solid $mid-red;
+	color: $mid-red;
+	&:hover {
+		background-color: #fff;
+		border: 2px solid $mid-red;
+		color: $mid-red;
+	}
+	&:active {
+		background-color: #000;
+		color: #fff;
+		border: 2px solid #000;
+	}
+
+}

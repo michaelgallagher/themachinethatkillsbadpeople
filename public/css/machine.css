@@ -7,20 +7,20 @@ body {
 /* Basics
 --------------------------------------------------------------------------------------- */
 body {
-  font-size: 19px;
+  font-size: 15px;
   line-height: 1.35em; }
   @media screen and (min-width: 660px) {
     body {
-      font-size: 20px; } }
+      font-size: 19px; } }
   @media screen and (min-width: 900px) {
     body {
-      font-size: 22px; } }
+      font-size: 20px; } }
   @media screen and (min-width: 1150px) {
     body {
-      font-size: 23px; } }
+      font-size: 21px; } }
   @media screen and (min-width: 1500px) {
     body {
-      font-size: 24px; } }
+      font-size: 22px; } }
   @media screen and (min-width: 660px) {
     body {
       line-height: 1.35em; } }
@@ -35,14 +35,14 @@ body {
       line-height: 1.25em; } }
 
 a {
-  color: #367730;
+  color: #34722e;
   text-decoration: none;
-  border: 1px solid #367730;
-  padding: 0 0.25em 0.06em 0.25em; }
+  border: 1px solid #34722e;
+  padding: 0 0.25em 0.08em 0.25em; }
   a:hover {
-    color: #367730;
+    color: #34722e;
     background: #e4f3e2;
-    border: 1px solid #367730; }
+    border: 1px solid #34722e; }
   a:active {
     color: white;
     border: 1px solid black;
@@ -56,111 +56,98 @@ em {
 
 /* Classess
 --------------------------------------------------------------------------------------- */
-.content-wrapper {
-  padding: 2.1em 2.25em; }
-
-.content p {
-  font-size: 19px;
-  line-height: 1.35em;
-  color: #367730;
-  max-width: 610px;
-  padding-bottom: 0.8em;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em; }
-  @media screen and (min-width: 660px) {
-    .content p {
-      font-size: 20px; } }
-  @media screen and (min-width: 900px) {
-    .content p {
-      font-size: 22px; } }
-  @media screen and (min-width: 1150px) {
-    .content p {
-      font-size: 23px; } }
-  @media screen and (min-width: 1500px) {
-    .content p {
-      font-size: 24px; } }
-  @media screen and (min-width: 660px) {
-    .content p {
-      line-height: 1.35em; } }
-  @media screen and (min-width: 900px) {
-    .content p {
-      line-height: 1.3em; } }
-  @media screen and (min-width: 1150px) {
-    .content p {
-      line-height: 1.25em; } }
-  @media screen and (min-width: 1500px) {
-    .content p {
-      line-height: 1.25em; } }
-  .content p:last-of-type {
-    padding-bottom: 0; }
-  @media screen and (min-width: 900px) {
-    .content p {
-      max-width: 680px; } }
-  @media screen and (min-width: 1150px) {
-    .content p {
-      max-width: 740px; } }
-  @media screen and (min-width: 1500px) {
-    .content p {
-      max-width: 820px; } }
-
-.screening---current {
-  background-color: #f7d7d2;
-  border-top: 1px solid #e93c11;
-  border-bottom: 1px solid #e93c11;
-  font-family: Helvetica, Arial, sans-serif; }
-  .screening---current .film-info {
-    font-size: 39.9px;
-    line-height: 0.9em;
-    letter-spacing: -0.03em;
-    padding: 0.5em 0 0.5em 0;
-    color: #000; }
-    @media screen and (min-width: 660px) {
-      .screening---current .film-info {
-        font-size: 44px; } }
-    @media screen and (min-width: 900px) {
-      .screening---current .film-info {
-        font-size: 50.6px; } }
-    @media screen and (min-width: 1150px) {
-      .screening---current .film-info {
-        font-size: 55.2px; } }
-    @media screen and (min-width: 1500px) {
-      .screening---current .film-info {
-        font-size: 60px; } }
-  .screening---current .film-title {
-    text-transform: uppercase; }
-  .screening---current .coming-up,
-  .screening---current .film-title,
-  .screening---current .film-director,
-  .screening---current .screening-date,
-  .screening---current .screening-time,
-  .screening---current .screening-location {
+.intro {
+  float: left;
+  width: 46%; }
+  .intro p {
+    font-size: 15px;
+    line-height: 1.35em;
+    color: #34722e;
+    max-width: 610px;
+    padding-bottom: 0.8em;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em; }
-  .screening---current .coming-up,
-  .screening---current .screening-date,
-  .screening---current .screening-time,
-  .screening---current .screening-location {
-    color: #e93c11;
-    letter-spacing: 0.01em; }
+    @media screen and (min-width: 660px) {
+      .intro p {
+        font-size: 19px; } }
+    @media screen and (min-width: 900px) {
+      .intro p {
+        font-size: 20px; } }
+    @media screen and (min-width: 1150px) {
+      .intro p {
+        font-size: 21px; } }
+    @media screen and (min-width: 1500px) {
+      .intro p {
+        font-size: 22px; } }
+    @media screen and (min-width: 660px) {
+      .intro p {
+        line-height: 1.35em; } }
+    @media screen and (min-width: 900px) {
+      .intro p {
+        line-height: 1.3em; } }
+    @media screen and (min-width: 1150px) {
+      .intro p {
+        line-height: 1.25em; } }
+    @media screen and (min-width: 1500px) {
+      .intro p {
+        line-height: 1.25em; } }
+    .intro p:last-of-type {
+      padding-bottom: 0; }
+    @media screen and (min-width: 900px) {
+      .intro p {
+        max-width: 680px; } }
+    @media screen and (min-width: 1150px) {
+      .intro p {
+        max-width: 740px; } }
+    @media screen and (min-width: 1500px) {
+      .intro p {
+        max-width: 820px; } }
+
+.btn--center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2.5em;
+  text-align: center; }
+
+.btn--purchase {
+  padding: 0.9em 1em;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #d1340c;
+  color: #d1340c; }
+  .btn--purchase:hover {
+    background-color: #fff;
+    border: 2px solid #d1340c;
+    color: #d1340c; }
+  .btn--purchase:active {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000; }
 
 .signup {
-  font-size: 17.1px;
+  float: right;
+  border: 1px solid #0d2b8d;
+  padding: 1em;
+  background-color: #fff;
+  width: 33%;
+  font-size: 14.25px;
   line-height: 1.35em;
   font-family: 'Courier New', Courier, monospace;
-  color: #0d30a3;
-  margin-top: 2em; }
+  color: #0d2b8d;
+  box-shadow: 0px 0px 100px #f1f12d; }
   @media screen and (min-width: 660px) {
     .signup {
-      font-size: 18px; } }
+      font-size: 18.05px; } }
   @media screen and (min-width: 900px) {
     .signup {
-      font-size: 19.8px; } }
+      font-size: 19px; } }
   @media screen and (min-width: 1150px) {
     .signup {
-      font-size: 20.7px; } }
+      font-size: 19.95px; } }
   @media screen and (min-width: 1500px) {
     .signup {
-      font-size: 21.6px; } }
+      font-size: 20.9px; } }
   @media screen and (min-width: 660px) {
     .signup {
       line-height: 1.35em; } }
@@ -178,48 +165,36 @@ em {
     -webkit-margin-after: 0em; }
 
 input {
-  font-size: 17.1px;
+  font-size: 14.25px;
   font-family: 'Courier New', Courier, monospace; }
   @media screen and (min-width: 660px) {
     input {
-      font-size: 18px; } }
+      font-size: 18.05px; } }
   @media screen and (min-width: 900px) {
     input {
-      font-size: 19.8px; } }
+      font-size: 19px; } }
   @media screen and (min-width: 1150px) {
     input {
-      font-size: 20.7px; } }
+      font-size: 19.95px; } }
   @media screen and (min-width: 1500px) {
     input {
-      font-size: 21.6px; } }
+      font-size: 20.9px; } }
 
 input[type=email] {
   z-index: 2;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  border-bottom: 1px solid #0d30a3;
+  border-bottom: 1px solid #0d2b8d;
   margin: 0;
   padding: 0.3em 0.5em 0.35em 0em;
   clear: both;
   width: 100%;
-  color: #0d30a3; }
-  @media screen and (min-width: 660px) {
-    input[type=email] {
-      width: 600px; } }
-  @media screen and (min-width: 900px) {
-    input[type=email] {
-      width: 670px; } }
-  @media screen and (min-width: 1150px) {
-    input[type=email] {
-      width: 730px; } }
-  @media screen and (min-width: 1500px) {
-    input[type=email] {
-      width: 810px; } }
+  color: #0d2b8d; }
 
 input[type=email]:focus {
   outline: none;
-  border-bottom: 1px solid #0d30a3; }
+  border-bottom: 1px solid #0d2b8d; }
 
 input[type=email]::placeholder {
   color: #a6b8f8; }
@@ -227,16 +202,16 @@ input[type=email]::placeholder {
 input[type=submit] {
   z-index: 1;
   border: none;
-  background-color: #0d30a3;
+  background-color: #0d2b8d;
   margin: 0 0 0 0;
   padding: 0.7em 0.75em 0.7em 0.75em;
   color: #fff; }
 
 input[name="subscribe"]:hover {
-  box-shadow: 0px 0px 100px #367730; }
+  background-color: #000; }
 
 input[name="subscribe"]:active {
-  box-shadow: 0px 0px 100px #e93c11; }
+  box-shadow: 0px 0px 100px #d1340c; }
 
 .mc-field-group {
   display: block;
@@ -248,5 +223,101 @@ input[name="subscribe"]:active {
 
 .submit-button {
   float: none; }
+
+.header,
+.screenings,
+.footer {
+  display: inline-block;
+  width: 100%; }
+
+.content-wrapper {
+  padding: 1.55em 1.65em; }
+  @media screen and (min-width: 900px) {
+    .content-wrapper {
+      padding: 2.1em 2.25em; } }
+
+/* Current screening
+--------------------------------------------------------------------------------------- */
+.screening--current {
+  background-color: #f5f3f3;
+  border-top: 1px solid #d1340c;
+  border-bottom: 1px solid #d1340c;
+  font-family: Helvetica, Arial, sans-serif; }
+  .screening--current .film-info {
+    font-size: 24px;
+    text-align: center;
+    line-height: 0.9em;
+    letter-spacing: -0.03em;
+    padding: 0.5em 0 0.5em 0;
+    color: #000; }
+    @media screen and (min-width: 660px) {
+      .screening--current .film-info {
+        font-size: 41.8px; } }
+    @media screen and (min-width: 900px) {
+      .screening--current .film-info {
+        font-size: 46px; } }
+    @media screen and (min-width: 1150px) {
+      .screening--current .film-info {
+        font-size: 50.4px; } }
+    @media screen and (min-width: 1500px) {
+      .screening--current .film-info {
+        font-size: 55px; } }
+  .screening--current .film-title,
+  .screening--current .coming-up,
+  .screening--current .accompanied {
+    text-transform: uppercase; }
+  .screening--current .film-title,
+  .screening--current .film-director,
+  .screening--current .coming-up {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em; }
+  .screening--current .coming-up,
+  .screening--current .accompanied,
+  .screening--current .screening-date {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: 0.03em;
+    margin-left: auto;
+    margin-right: auto; }
+  .screening--current .coming-up,
+  .screening--current .screening-date {
+    color: #d1340c; }
+  .screening--current .screening-date {
+    padding-bottom: 1em; }
+  .screening--current .screening-description {
+    margin-left: auto;
+    margin-right: auto;
+    color: #d1340c;
+    max-width: 800px;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    padding-bottom: 0.9em; }
+    .screening--current .screening-description:last-of-type {
+      padding-bottom: 0em; }
+    .screening--current .screening-description i {
+      font-style: normal;
+      text-transform: uppercase; }
+    .screening--current .screening-description a {
+      padding: 0 0.25em 0.15em 0.25em;
+      border: 1px solid #d1340c;
+      color: #d1340c; }
+      .screening--current .screening-description a:hover {
+        background-color: #fff; }
+      .screening--current .screening-description a:active {
+        background-color: #000;
+        color: #fff;
+        border: 1px solid #000; }
+
+/* Previous screenings
+--------------------------------------------------------------------------------------- */
+.previous-screening {
+  border-bottom: 1px solid #fcfcfc; }
+
+.footer {
+  margin-top: 2em;
+  background-color: #0d2b8d;
+  color: #fff; }
 
 /*# sourceMappingURL=machine.css.map */

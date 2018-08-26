@@ -1,8 +1,8 @@
-$font-tiny:   19px;
-$font-small:  20px;
-$font-medium: 22px;
-$font-large:  23px;
-$font-huge:   24px;
+$font-tiny:   15px;
+$font-small:  19px;
+$font-medium: 20px;
+$font-large:  21px;
+$font-huge:   22px;
 
 $font-tiny-lineheight:   1.35em;
 $font-small-lineheight:  1.35em;
@@ -18,6 +18,14 @@ $font-huge-lineheight:   1.25em;
 	@include breakpoint(huge)   {font-size: $font-huge;    }
 }
 
+@mixin body-fontsize-small {
+	font-size: $font-tiny*0.72;
+	@include breakpoint(small)  {font-size: $font-small*0.72;   }
+	@include breakpoint(medium) {font-size: $font-medium*0.72;  }
+	@include breakpoint(large)  {font-size: $font-large*0.72;   }
+	@include breakpoint(huge)   {font-size: $font-huge*0.72;    }
+}
+
 @mixin body-fontsize-medium {
 	font-size: $font-tiny*1.5;
 	@include breakpoint(small)  {font-size: $font-small*1.3;   }
@@ -27,7 +35,7 @@ $font-huge-lineheight:   1.25em;
 }
 
 @mixin body-fontsize-large {
-	font-size: $font-tiny*2.1;
+	font-size: $font-tiny*1.6;
 	@include breakpoint(small)  {font-size: $font-small*2.2;   }
 	@include breakpoint(medium) {font-size: $font-medium*2.3;  }
 	@include breakpoint(large)  {font-size: $font-large*2.4;   }
@@ -35,11 +43,11 @@ $font-huge-lineheight:   1.25em;
 }
 
 @mixin form-fontsize {
-	font-size: $font-tiny*0.9;
-	@include breakpoint(small)  {font-size: $font-small*0.9;   }
-	@include breakpoint(medium) {font-size: $font-medium*0.9;  }
-	@include breakpoint(large)  {font-size: $font-large*0.9;   }
-	@include breakpoint(huge)   {font-size: $font-huge*0.9;    }
+	font-size: $font-tiny*0.95;
+	@include breakpoint(small)  {font-size: $font-small*0.95;   }
+	@include breakpoint(medium) {font-size: $font-medium*0.95;  }
+	@include breakpoint(large)  {font-size: $font-large*0.95;   }
+	@include breakpoint(huge)   {font-size: $font-huge*0.95;    }
 }
 
 @mixin body-lineheight {
@@ -66,7 +74,7 @@ a {
 	color: $mid-green;
 	text-decoration: none;
 	border: 1px solid $mid-green;
-	padding: 0 0.25em 0.06em 0.25em;
+	padding: 0 0.25em 0.08em 0.25em;
 	&:hover {
 		color: $mid-green;
 		background: $pale-green;
@@ -93,11 +101,11 @@ em {
 /* Classess
 --------------------------------------------------------------------------------------- */
 
-.content-wrapper {
-	padding: 2.1em 2.25em;
-}
 
-.content {
+
+.intro {
+	float: left;
+	width: 46%;
 	p {
 		@include body-fontsize;
 		@include body-lineheight;
@@ -117,41 +125,3 @@ em {
 		// @include body-fontsize-medium;
 	}
 }
-
-.screening---current {
-	background-color: $pale-red;
-	border-top: 1px solid $mid-red;
-	border-bottom: 1px solid $mid-red;
-	font-family: Helvetica, Arial, sans-serif;
-	.film-info {
-		@include body-fontsize-large;
-		line-height: 0.9em;
-		letter-spacing: -0.03em;
-		padding: 0.5em 0 0.5em 0;
-		color: #000;
-	}
-	.film-title {
-		text-transform: uppercase;
-	}
-	.coming-up {
-		// font-weight: bold;
-	}
-	.coming-up,
-	.film-title,
-	.film-director,
-	.screening-date, 
-	.screening-time,
-	.screening-location {
-		-webkit-margin-before: 0em;
-		-webkit-margin-after: 0em;
-	}
-	.coming-up,
-	.screening-date, 
-	.screening-time,
-	.screening-location {
-		color: $mid-red;
-		letter-spacing: 0.01em;
-	}
-}
-
-

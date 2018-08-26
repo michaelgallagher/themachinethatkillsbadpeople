@@ -1,0 +1,11 @@
+.header,
+.screenings,
+.footer {
+    display: inline-block;
+    width: 100%;
+}
+
+.content-wrapper {
+	padding: 1.55em 1.65em;
+	@include breakpoint(medium) {padding: 2.1em 2.25em;}
+}
