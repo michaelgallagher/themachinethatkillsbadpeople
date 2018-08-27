@@ -35,18 +35,19 @@ body {
       line-height: 1.25em; } }
 
 a {
-  color: #34722e;
+  color: #286b22;
   text-decoration: none;
-  border: 1px solid #34722e;
+  border: 1px solid #286b22;
   padding: 0 0.25em 0.08em 0.25em; }
   a:hover {
     color: #fff;
-    background: #34722e;
-    border: 1px solid #34722e; }
+    background: #286b22;
+    border: 1px solid #286b22; }
   a:active {
     color: white;
     border: 1px solid black;
-    background: black; }
+    background: black;
+    box-shadow: 0px 0px 50px #000; }
 
 em {
   font-style: normal;
@@ -59,7 +60,7 @@ em {
 .intro p {
   font-size: 15px;
   line-height: 1.35em;
-  color: #34722e;
+  color: #286b22;
   max-width: 600px;
   padding-bottom: 0.8em;
   -webkit-margin-before: 0em;
@@ -108,28 +109,31 @@ em {
   text-align: center; }
 
 .btn--purchase {
-  padding: 0.9em 1em;
+  padding: 0.9em 1em 1em 1em;
   text-align: center;
   text-transform: uppercase;
-  border: 2px solid #d1340c;
-  color: #d1340c; }
+  border: 4px solid #d1340c;
+  color: #d1340c;
+  box-shadow: 0px 0px 70px 1px #d1340c; }
   .btn--purchase:hover {
-    background-color: #fff;
-    border: 2px solid #d1340c;
-    color: #d1340c; }
-  .btn--purchase:active {
-    background-color: #000;
     color: #fff;
-    border: 2px solid #000; }
+    background-color: #d1340c;
+    border: 2px solid #d1340c; }
+  .btn--purchase:active {
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #000;
+    box-shadow: 0px 0px 50px #000; }
 
 .signup {
   align-self: stretch;
-  border: 1px solid #34722e;
-  margin-top: 1em;
+  border: 4px solid #19338b;
+  margin-top: 2em;
+  margin-bottom: 1em;
   padding: 1em;
-  color: #34722e;
+  color: #19338b;
   background-color: #fff;
-  box-shadow: 0px 0px 20px #f1f12d;
+  box-shadow: 0px 0px 25px 3px #f1f12d;
   font-size: 14.25px;
   line-height: 1.35em;
   font-family: 'Courier New', Courier, monospace; }
@@ -157,15 +161,14 @@ em {
   @media screen and (min-width: 1500px) {
     .signup {
       line-height: 1.25em; } }
-  @media screen and (min-width: 660px) {
-    .signup {
-      width: 500px; } }
   @media screen and (min-width: 900px) {
     .signup {
       align-self: flex-start;
       margin-left: 2em;
       margin-top: 0.3em;
-      box-shadow: 0px 0px 50px #f1f12d; } }
+      margin-bottom: 0;
+      width: 500px;
+      box-shadow: 0px 0px 50px 4px #f1f12d; } }
   .signup p {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em; }
@@ -193,28 +196,28 @@ input[type=email] {
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  border-bottom: 1px solid #34722e;
-  color: #34722e; }
+  border-bottom: 1px solid #19338b;
+  color: #19338b; }
 
 input[type=email]:focus {
   outline: none;
-  border-bottom: 1px solid #34722e; }
+  border-bottom: 1px solid #19338b; }
 
 input[type=email]::placeholder {
-  color: #a1d49a; }
+  color: #97a4d3; }
 
 input[type=submit] {
   margin: 1em 0 0 0;
-  padding: 0.7em 0.75em 0.7em 0.75em;
+  padding: 0.7em 0.75em 0.8em 0.75em;
   border: none;
   color: #fff;
-  background-color: #34722e; }
+  background-color: #19338b; }
 
 input[name="subscribe"]:hover {
   background-color: #000; }
 
 input[name="subscribe"]:active {
-  box-shadow: 0px 0px 100px #d1340c; }
+  box-shadow: 0px 0px 50px #000; }
 
 .form-label {
   font-family: 'Courier New', Courier, monospace;
@@ -250,6 +253,7 @@ This page handles how the large blocks are positioned
 /* Current screening
 --------------------------------------------------------------------------------------- */
 .screening--current {
+  padding-bottom: 1em;
   background-color: #f5f3f3;
   border-top: 1px solid #d1340c;
   border-bottom: 1px solid #d1340c;
@@ -259,7 +263,6 @@ This page handles how the large blocks are positioned
     text-align: center;
     line-height: 0.9em;
     letter-spacing: -0.03em;
-    padding: 0.5em 0 0.5em 0;
     color: #000; }
     @media screen and (min-width: 660px) {
       .screening--current .film-info {
@@ -293,7 +296,10 @@ This page handles how the large blocks are positioned
   .screening--current .coming-up,
   .screening--current .screening-date {
     color: #d1340c; }
+  .screening--current .coming-up {
+    padding-bottom: 2em; }
   .screening--current .screening-date {
+    padding-top: 1em;
     padding-bottom: 1em; }
   .screening--current .screening-description {
     margin-left: auto;
@@ -315,7 +321,8 @@ This page handles how the large blocks are positioned
       border: 1px solid #d1340c;
       color: #d1340c; }
       .screening--current .screening-description a:hover {
-        background-color: #fff; }
+        color: #fff;
+        background-color: #d1340c; }
       .screening--current .screening-description a:active {
         background-color: #000;
         color: #fff;
@@ -328,7 +335,7 @@ This page handles how the large blocks are positioned
 
 .footer {
   margin-top: 2em;
-  background-color: #0d2b8d;
+  background-color: #19338b;
   color: #fff; }
 
 /*# sourceMappingURL=machine.css.map */

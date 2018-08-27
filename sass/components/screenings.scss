@@ -2,6 +2,9 @@
 --------------------------------------------------------------------------------------- */
 
 .screening--current {
+	// margin: 0 1.65em;
+	// @include breakpoint(medium) {margin: 0 2.25em;}	
+	padding-bottom: 1em;
 	background-color: $pale-red;
 	border-top: 1px solid $mid-red;
 	border-bottom: 1px solid $mid-red;
@@ -11,7 +14,7 @@
 		text-align: center;
 		line-height: 0.9em;
 		letter-spacing: -0.03em;
-		padding: 0.5em 0 0.5em 0;
+		// padding: 0.5em 0 0.5em 0;
 		color: #000;
 	}
 	
@@ -29,7 +32,6 @@
 	.coming-up,
 	.accompanied,
 	.screening-date {
-		// @include body-fontsize-small;
 		text-align: center;
 		line-height: 1.6em;
 		letter-spacing: 0.03em;
@@ -42,7 +44,13 @@
 		color: $mid-red;
 	}
 
-	.screening-date {padding-bottom: 1em;}
+	.coming-up {
+		padding-bottom: 2em;
+	}
+	.screening-date {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
 
 	.screening-description {
 		margin-left: auto;
@@ -66,7 +74,8 @@
 			border: 1px solid $mid-red;
 			color: $mid-red;
 			&:hover {
-				background-color: #fff;
+				color: #fff;
+				background-color: $mid-red;
 			}
 			&:active {
 				background-color: #000;
