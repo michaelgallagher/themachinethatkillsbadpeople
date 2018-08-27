@@ -1,16 +1,21 @@
 .signup {
-	// display: flex;
-	// flex-direction: column;
-	border: 1px solid $mid-blue;
+	align-self: stretch;
+	border: 1px solid $mid-green;
+	margin-top: 1em;
 	padding: 1em;
+	color: $mid-green;
 	background-color: #fff;
+	box-shadow: 0px 0px 20px $mid-yellow;
 	@include form-fontsize;
 	@include body-lineheight;
 	font-family: 'Courier New', Courier, monospace;
-	color: $mid-blue;
-	box-shadow: 0px 0px 50px $mid-yellow;
 	@include breakpoint(small) {width: 500px;}
-	@include breakpoint(medium) {margin-left: 2em;}
+	@include breakpoint(medium) {
+		align-self: flex-start;
+		margin-left: 2em;
+		margin-top: 0.3em;
+		box-shadow: 0px 0px 50px $mid-yellow;
+	}
     p {
         -webkit-margin-before: 0em;
         -webkit-margin-after: 0em;
@@ -23,63 +28,35 @@ input {
 }
 
 input[type=email] {
-	// display: flex;
-	// flex-grow: 1;
-	// width: 480px;
+	margin: 0;
+	padding: 0.3em 0 0.5em 0em;
 	width: 100%;
-	z-index: 2;
 	border-top: 0px;
 	border-left: 0px;
 	border-right: 0px;
-	border-bottom: 1px solid $mid-blue;
-	margin: 0;
-	padding: 0.3em 0 0.6em 0em;
-	// clear: both;
-	color: $mid-blue;
-	// @include breakpoint(small) {width: 600px;}
-	// @include breakpoint(medium) {width: 670px;}
-	// @include breakpoint(large) {width: 730px;}
-	// @include breakpoint(huge) {width: 810px;}
+	border-bottom: 1px solid $mid-green;
+	color: $mid-green;
 }
 
 input[type=email]:focus {
 	outline: none;
-	border-bottom: 1px solid $mid-blue;
+	border-bottom: 1px solid $mid-green;
 }
 
-input[type=email]::placeholder {
-	color: $pale-blue;
-}
+input[type=email]::placeholder {color: $pale-green;}
 
 input[type=submit] {
-	z-index: 1;
+	margin: 1em 0 0 0;
+	padding: 0.7em 0.75em 0.7em 0.75em;	
 	border: none;
-	background-color: $mid-blue;
-	margin: 0 0 0 0;
-	padding: 0.7em 0.75em 0.7em 0.75em;
 	color: #fff;
+	background-color: $mid-green;
 }
 
-input[name="subscribe"]:hover {
-	background-color: #000;
-}
-input[name="subscribe"]:active {
-	box-shadow: 0px 0px 100px $mid-red;
-}
-
-.mc-field-group {
-	display: block;
-	float: none;
-	// @include breakpoint(medium) {float: left;}
-}
+input[name="subscribe"]:hover {background-color: #000;}
+input[name="subscribe"]:active {box-shadow: 0px 0px 100px $mid-red;}
 
 .form-label {
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 0.5em;
 }
-
-.submit-button {
-	float: none;
-	// @include breakpoint(medium) {float: left;}
-}
-

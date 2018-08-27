@@ -20,11 +20,13 @@ This page handles how the large blocks are positioned
 }
 
 .header {
+    // height: 0%;
     // justify-content: space-between;
 }
 
 .flex-item {
     flex-basis: auto;
+    // height: 0%;
 }
 
 .content-wrapper {
@@ -37,6 +39,6 @@ This page handles how the large blocks are positioned
 }
 
 .signup {
-    height: auto;
+    // height: auto;
     // flex-grow: 1;
 }

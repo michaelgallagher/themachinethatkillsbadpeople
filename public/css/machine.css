@@ -40,8 +40,8 @@ a {
   border: 1px solid #34722e;
   padding: 0 0.25em 0.08em 0.25em; }
   a:hover {
-    color: #34722e;
-    background: #e4f3e2;
+    color: #fff;
+    background: #34722e;
     border: 1px solid #34722e; }
   a:active {
     color: white;
@@ -123,14 +123,16 @@ em {
     border: 2px solid #000; }
 
 .signup {
-  border: 1px solid #0d2b8d;
+  align-self: stretch;
+  border: 1px solid #34722e;
+  margin-top: 1em;
   padding: 1em;
+  color: #34722e;
   background-color: #fff;
+  box-shadow: 0px 0px 20px #f1f12d;
   font-size: 14.25px;
   line-height: 1.35em;
-  font-family: 'Courier New', Courier, monospace;
-  color: #0d2b8d;
-  box-shadow: 0px 0px 50px #f1f12d; }
+  font-family: 'Courier New', Courier, monospace; }
   @media screen and (min-width: 660px) {
     .signup {
       font-size: 18.05px; } }
@@ -160,7 +162,10 @@ em {
       width: 500px; } }
   @media screen and (min-width: 900px) {
     .signup {
-      margin-left: 2em; } }
+      align-self: flex-start;
+      margin-left: 2em;
+      margin-top: 0.3em;
+      box-shadow: 0px 0px 50px #f1f12d; } }
   .signup p {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em; }
@@ -182,30 +187,28 @@ input {
       font-size: 20.9px; } }
 
 input[type=email] {
+  margin: 0;
+  padding: 0.3em 0 0.5em 0em;
   width: 100%;
-  z-index: 2;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  border-bottom: 1px solid #0d2b8d;
-  margin: 0;
-  padding: 0.3em 0 0.6em 0em;
-  color: #0d2b8d; }
+  border-bottom: 1px solid #34722e;
+  color: #34722e; }
 
 input[type=email]:focus {
   outline: none;
-  border-bottom: 1px solid #0d2b8d; }
+  border-bottom: 1px solid #34722e; }
 
 input[type=email]::placeholder {
-  color: #a6b8f8; }
+  color: #a1d49a; }
 
 input[type=submit] {
-  z-index: 1;
-  border: none;
-  background-color: #0d2b8d;
-  margin: 0 0 0 0;
+  margin: 1em 0 0 0;
   padding: 0.7em 0.75em 0.7em 0.75em;
-  color: #fff; }
+  border: none;
+  color: #fff;
+  background-color: #34722e; }
 
 input[name="subscribe"]:hover {
   background-color: #000; }
@@ -213,16 +216,9 @@ input[name="subscribe"]:hover {
 input[name="subscribe"]:active {
   box-shadow: 0px 0px 100px #d1340c; }
 
-.mc-field-group {
-  display: block;
-  float: none; }
-
 .form-label {
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.5em; }
-
-.submit-button {
-  float: none; }
 
 /*
 This page handles how the large blocks are positioned
@@ -250,9 +246,6 @@ This page handles how the large blocks are positioned
   @media screen and (min-width: 900px) {
     .content-wrapper {
       padding: 2.1em 2.25em; } }
-
-.signup {
-  height: auto; }
 
 /* Current screening
 --------------------------------------------------------------------------------------- */
