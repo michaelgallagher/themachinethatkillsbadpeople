@@ -1,11 +1,42 @@
+/*
+This page handles how the large blocks are positioned
+*/
+
 .header,
 .screenings,
 .footer {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(medium) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.header {
+    // justify-content: space-between;
+}
+
+.flex-item {
+    flex-basis: auto;
 }
 
 .content-wrapper {
 	padding: 1.55em 1.65em;
 	@include breakpoint(medium) {padding: 2.1em 2.25em;}
+}
+
+.intro {
+    // flex-grow: 2;
+}
+
+.signup {
+    height: auto;
+    // flex-grow: 1;
 }
